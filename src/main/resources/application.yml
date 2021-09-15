@@ -1,0 +1,30 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: LISTING-APIS
+  cloud:
+    discovery:
+      enabled: true
+
+eureka:
+  server:
+    enableSelfPreservation: false
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+swagger:
+  ui:
+    enable: true
+    title: Listing Apis
+    description: application description
+    version: 0.0.1
+    contactName: Youssef
+    contactEmail: XXXX@gmail.com
+
+
